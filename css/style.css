@@ -1,0 +1,50 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+.jumbotron-background-image {
+  background-image: url("../images/hero.jpg");
+  background-size: cover;
+}
+
+.jumbotron p {
+  color: #f6efe5;
+}
+
+body {
+  background-color: #f6efe5;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.container-fluid {
+  width: 90%;
+  margin: auto;
+}
+
+@media screen and (max-width: 1426px) {
+  img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 1176px) {
+  img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+  }
+}

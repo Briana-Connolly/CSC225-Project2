@@ -1,0 +1,12 @@
+.jumbotron-background2-image {
+  background-image: url("../images/aboutHero.jpg");
+  background-size: cover;
+}
+
+.jumbotron p {
+  font-size: 20px;
+}
+
+.jumbotron h2 {
+  font-size: 30px;
+}

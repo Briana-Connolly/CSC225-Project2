@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/checkout.css" />
+
+    <title>Checkout</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand text-success" href="index.html">Briana's Dogs</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="adopt.html">Adopt</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html">Cart</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <br />
+      <h1>Checkout</h1>
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="fullName">Full Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="fullName"
+              placeholder="Full Name"
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="emailAddress">Email Address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="emailAddress"
+              placeholder="Email"
+            />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="address">Address</label>
+            <input
+              type="text"
+              class="form-control"
+              id="address"
+              placeholder="1234 Rocky Rd"
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="phoneNumber">Phone</label>
+            <input
+              type="text"
+              class="form-control"
+              id="phoneNumber"
+              placeholder="+1"
+            />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="city">City</label>
+            <input
+              type="text"
+              class="form-control"
+              id="city"
+              placeholder="City"
+            />
+          </div>
+          <div class="form-group col-md-4">
+            <label for="state">State</label>
+            <select id="state" class="form-control">
+              <option selected>Choose...</option>
+              <option>AL</option>
+              <option>Ak</option>
+              <option>AZ</option>
+              <option>AR</option>
+              <option>CA</option>
+              <option>CO</option>
+              <option>CT</option>
+              <option>DE</option>
+              <option>FL</option>
+              <option>GA</option>
+              <option>HI</option>
+              <option>ID</option>
+              <option>IL</option>
+              <option>IN</option>
+              <option>IA</option>
+              <option>KS</option>
+              <option>KY</option>
+              <option>LA</option>
+              <option>ME</option>
+              <option>MD</option>
+              <option>MA</option>
+              <option>MI</option>
+              <option>MN</option>
+              <option>MS</option>
+              <option>MO</option>
+              <option>MT</option>
+              <option>NE</option>
+              <option>NV</option>
+              <option>NH</option>
+              <option>NJ</option>
+              <option>NM</option>
+              <option>NY</option>
+              <option>NC</option>
+              <option>ND</option>
+              <option>OH</option>
+              <option>OK</option>
+              <option>OR</option>
+              <option>PA</option>
+              <option>RI</option>
+              <option>SC</option>
+              <option>SD</option>
+              <option>TN</option>
+              <option>TX</option>
+              <option>UT</option>
+              <option>VT</option>
+              <option>VA</option>
+              <option>WA</option>
+              <option>WV</option>
+              <option>WI</option>
+              <option>WY</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputZip">Zip</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputZip"
+              placeholder="zip"
+            />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="creditCard">Credit Card Number</label>
+            <input
+              placeholder="Credit Card"
+              id="creditCard"
+              type="text"
+              class="form-control"
+              name="creditCard"
+              required
+            />
+          </div>
+          <div class="form-group col-md-2">
+            <label for="securityNumber">CVV</label>
+            <input
+              placeholder="Security Number"
+              id="securityNumber"
+              type="text"
+              class="form-control"
+              name="securityNumber"
+              required
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="fullNameOn">Name on Card</label>
+            <input
+              type="text"
+              class="form-control"
+              id="fullNameOn"
+              placeholder="Full Name on Card"
+            />
+          </div>
+        </div>
+
+        <h3>References</h3>
+        <p>In order to adopt our dogs we need to do a background check</p>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="reference1FullName">Reference 1 </label>
+            <input
+              type="text"
+              class="form-control"
+              id="reference1FullName"
+              placeholder="Reference 1 Full Name"
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="reference1EmailAddress">Email Address </label>
+            <input
+              type="email"
+              class="form-control"
+              id="reference1EmailAddress"
+              placeholder="Email"
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="reference1PhoneNumber">Phone </label>
+          <input
+            type="text"
+            class="form-control"
+            id="reference1PhoneNumber"
+            placeholder="+1"
+          />
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="reference2FullName">Reference 2 </label>
+            <input
+              type="text"
+              class="form-control"
+              id="reference2FullName"
+              placeholder="Reference 2 Full Name"
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="reference2EmailAddress">Email Address </label>
+            <input
+              type="email"
+              class="form-control"
+              id="reference2EmailAddress"
+              placeholder="Email"
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="reference2PhoneNumber">Phone </label>
+          <input
+            type="text"
+            class="form-control"
+            id="reference2PhoneNumber"
+            placeholder="+1"
+          />
+        </div>
+        <p>
+          *You're credit card will only be charged for you donation at this
+          time. You will not be charged for any dogs until you're application is
+          approved.
+        </p>
+
+        <table class="table table table-condensed ">
+          <thead>
+            <tr>
+              <th scope="col">Your Cart</th>
+              <th scope="col">Price</th>
+              <th scope="col">Subtotal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Lucky</td>
+              <td>$112.00</td>
+              <td>$112.00</td>
+            </tr>
+
+            <tr>
+              <td>Charles</td>
+              <td>$120.00</td>
+              <td>$232.00</td>
+            </tr>
+
+            <tr>
+              <td>Donation</td>
+              <td>$20.00</td>
+              <td>$252.00</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2" class="hidden-xs"></td>
+              <td class="hidden-xs text-center">
+                <strong>Due Now $20.00</strong>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+
+        <input type="checkbox" name="vehicle1" value="Bike" /> Sign Me Up for
+        emails!<br />
+        <br />
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <br />
+        <br />
+      </form>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
